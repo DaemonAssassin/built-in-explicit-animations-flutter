@@ -1,5 +1,6 @@
-import 'package:builtin_explicit_animations/transitions_widgets/rotation_transition.dart';
 import 'package:flutter/material.dart';
+
+import 'transitions_widgets/scale_transition.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: const MyRotationTransition(),
+        body: const MyScaleTransition(),
       ),
     );
   }
