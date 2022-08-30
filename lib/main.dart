@@ -1,4 +1,4 @@
-import 'package:builtin_explicit_animations/transitions_widgets/decorated_box_transition.dart';
+import 'package:builtin_explicit_animations/transitions_widgets/rotation_transition.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: const MyDecoratedBoxTransition(),
+        body: const MyRotationTransition(),
       ),
     );
   }
