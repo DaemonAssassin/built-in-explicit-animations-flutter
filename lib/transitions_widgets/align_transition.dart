@@ -48,13 +48,11 @@ class _MyAlignTransitionState extends State<MyAlignTransition>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            width: double.infinity,
-            height: 500.0,
-            child: AlignTransition(
-              alignment: _animation,
-              child: _buildChild(),
-            ),
+          AlignTransition(
+            alignment: _animation,
+            heightFactor: 2.0,
+            widthFactor: 2.0,
+            child: _buildChild(),
           ),
           addVerticalSpace(30),
           buildButton(
